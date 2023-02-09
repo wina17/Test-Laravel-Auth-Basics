@@ -29,7 +29,8 @@
                                      class="block mt-1 w-full"
                                      type="text"
                                      name="name"
-                                     value="???"
+                                     value="{{ auth()->user()->name }}"
+                                     {{-- value="{{ Auth::user()->name }}" --}}
                                      required />
                         </div>
 
@@ -40,7 +41,8 @@
                                      class="block mt-1 w-full"
                                      type="email"
                                      name="email"
-                                     value="???"
+                                     value="{{ auth()->user()->email }}"
+                                     {{-- value="{{ Auth::user()->email }}" --}}
                                      required />
                         </div>
 
